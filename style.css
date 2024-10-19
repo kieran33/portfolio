@@ -1,0 +1,127 @@
+* {
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+/* Style personnalisé */
+body {
+  scroll-behavior: smooth;
+}
+
+.barre_navigation {
+  background: #2d6f9f;
+}
+
+li a:hover {
+  opacity: 0.5;
+}
+
+section {
+  padding-top: 70px; /* Padding pour éviter que la section ne soit cachée sous la navbar */
+}
+
+/* Section Accueil */
+#accueil {
+  background: linear-gradient(to right, #2d6f9f, #b1e1f5);
+  color: white;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.bouton_télécharger_cv {
+  background: #2d6f9f;
+  color: white;
+  width: 200px;
+}
+
+.bouton_télécharger_cv:hover {
+  opacity: 0.5;
+  background: #2d6f9f;
+  color: white;
+}
+
+.category-title {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skill p {
+  font-weight: bold;
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 15px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar {
+  background-color: #2d6f9f; /* Bleu sombre */
+}
+
+.cv-image {
+  object-fit: contain; /* Contient l'image sans la couper */
+}
+
+.div_techno {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Réinitialiser la marge supérieure et inférieure */
+  padding: 0; /* Réinitialiser le rembourrage */
+  list-style: none; /* Enlever les puces */
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Répartir l'espace entre les éléments */
+  height: 100%; /* Prend toute la hauteur disponible */
+}
+
+.card-body {
+  flex-grow: 1; /* Fait en sorte que le corps de la carte prenne tout l'espace disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bouton_télécharger_cv {
+  margin-top: auto; /* Pousse le bouton en bas */
+}
+
+/* Ajuste la hauteur des colonnes pour être égale */
+#competences .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Ajustement pour petits écrans */
+@media (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  background-color: #343a40;
+}
